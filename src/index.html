@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="robots" content="noindex" />
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/register.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <section class="wrapper">
+      <div class="form login">
+        <header>The Movie Watchlist</header>
+        <form action="#">
+          <input id="se" type="username" placeholder="Username" required />
+          <input id="sp" type="password" placeholder="Password" required />
+          <input type="submit" onclick="login()" value="Login" />
+          <p
+            >You don't have an account?,<a
+              href="register.html"
+              class="font-bold"
+              >Register</a
+            ></p
+          >
+        </form>
+      </div>
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>

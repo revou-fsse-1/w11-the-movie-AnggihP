@@ -329,6 +329,9 @@
       "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "imdb_rating": 8.4,
       "isWatched": false
+    },
+    {
+      "id": 11
     }
   ],
   "currentWatch": [
@@ -503,6 +506,17 @@
       "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
       "rating": 9,
       "isWatched": false
+    },
+    {
+      "id": 7,
+      "title": "undefined",
+      "image": "undefined",
+      "synopsis": "undefined",
+      "genre": "undefined",
+      "production": "undefined",
+      "trailer": "undefined",
+      "rating": "undefined",
+      "year": "undefined"
     }
   ]
 }

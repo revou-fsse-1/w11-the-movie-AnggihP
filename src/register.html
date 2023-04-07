@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/register.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form login">
+        <header>The Movie Watchlist</header>
+        <form action="#">
+          <input id="us" type="username" placeholder="Username" required />
+          <input id="em" type="email" placeholder="Email Address" required />
+          <input id="rp" type="password" placeholder="Password" required />
+          <input
+            id="rrp"
+            type="password"
+            placeholder="Confirm Password"
+            required
+          />
+          <input type="submit" onclick="register()" value="Register" />
+          <p> Already have an account?,<a href="index.html">Login</a></p>
+        </form>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
