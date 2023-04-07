@@ -1,0 +1,87 @@
+ /* Import Google font - Poppins */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins",
+     sans-serif;
+ }
+ body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .form.login {
+   width: 600px;
+   padding: 20px
+     140px;
+   border-radius: 80%;
+   height: 100%;
+   background: #fff;
+   transition: all
+     0.6s
+     ease;
+ }
+
+ .form
+   header {
+   font-size: 65px;
+   text-align: left;
+   color: #000000;
+   font-weight: bold;
+   }
+
+ .wrapper
+   form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ form
+   input {
+   height: 50px;
+   outline: none;
+   border: none;
+   padding: 0
+     15px;
+   font-size: 16px;
+   font-weight: 400;
+   color: #000000;
+   border-radius: 20px;
+   background: #D9D9D9
+   ;
+ }
+ .form.login
+   input {
+   border: 1px
+     solid
+     #aaa;
+ }
+
+ form a {
+   color: #333;
+   text-decoration: none;
+ }
+ form
+   a:hover {
+   text-decoration: underline;
+ }
+ form
+   input[type="submit"] {
+   margin-top: 15px;
+   padding: none;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+ }
+ .form.login
+   input[type="submit"] {
+   background: #37C6F3
+   ;
+   color: #fff;
+   border: none;
+ }
+  
