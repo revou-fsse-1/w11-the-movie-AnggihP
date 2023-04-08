@@ -41,7 +41,7 @@ const getAllUser = async (username) => {
           alert("Password does not match.");
           return;
         } else {
-          (getAllUser !== undefined) {
+          (getAllUser !== undefined); {
           alert(inputusername + " yor are login Now \n welcome to our website.");
           window.location.href = "homepage.html";
           }
