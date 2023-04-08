@@ -24,9 +24,9 @@ const getAllUser = async (username) => {
         var inputusername = document.getElementById("se").value;
         var inputpassword = document.getElementById("sp").value;
       
-        var i = emailArray.indexOf(inputusername);
+        var i = usernameArray.indexOf(inputusername);
       
-        if (emailArray.indexOf(inputusername) == -1) {
+        if (eusernameArray.indexOf(inputusername) == -1) {
           if (inputusername == "") {
             alert("Username is required.");
             return;
