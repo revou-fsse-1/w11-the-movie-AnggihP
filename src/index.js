@@ -24,14 +24,14 @@ const getAllUser = async (username) => {
         var inputusername = document.getElementById("se").value;
         var inputpassword = document.getElementById("sp").value;
       
-        var i = emailArray.indexOf(inputEmail);
+        var i = emailArray.indexOf(inputusername);
       
-        if (emailArray.indexOf(inputEmail) == -1) {
-          if (inputEmail == "") {
-            alert("Email required.");
+        if (emailArray.indexOf(inputusername) == -1) {
+          if (inputusername == "") {
+            alert("Username is required.");
             return;
           }
-          alert("Email does not exist.");
+          alert("Username does not exist.");
           return;
         } else if (passwordArray[i] != inputpassword) {
           if (inputpassword == "") {
