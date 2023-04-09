@@ -1,5 +1,6 @@
 const API_ENDPOINT = "http://localhost:3000";
 var emailArray = [];
+var usernameArray = [];
 var passwordArray = [];
 
 var loginBox = document.getElementById("login");

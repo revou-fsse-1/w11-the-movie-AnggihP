@@ -1,49 +1,37 @@
-const API_ENDPOINT = "http://localhost:3000";
-var emailArray = [];
+const API_ENDPOINT = "http://localhost:3000/users";
+
+var usernameArray = [];
 var passwordArray = [];
 
 var loginBox = document.getElementById("login");
-var regBox = document.getElementById("register");
 
-const getAllUser = async (username) => {
-  try {
-    const response = await axios.get(
-      `${API_ENDPOINT}/users?q=${username}`
+const checkData = (
+  (e) => e.username === inputUsername && e.password === inputpassword
+);
 
-    );
-    return response.data;
-  } catch (err) {
-    console.log(err);
+fetch(API_ENDPOINT, checkData)
+.then((response) => response.text())
+.then((result) => console.log(result))
+.catch((error) => console.log("error", error));
+
+
+function login() {
+  event.preventDefault();
+  
+  var inputUsername = document.getElementById("us").value;
+    var inputpassword = document.getElementById("rp").value;
+  
+
+  if (inputUsername == "") {
+    alert("Username required.");
+    return;
+  } else if (inputpassword == "") {
+    alert("Password required.");
+    return;
+  } else if (checkData === undefined) {
+    alert("Please register first. Thankyou.");
+  } else if (checkData !== undefined) {
+    alert("Login successful! Welcome.");
+    window.location.href = "homepage.html";
   }
-};
-
-
-  function login() {
-    event.preventDefault();
-      
-        var inputusername = document.getElementById("se").value;
-        var inputpassword = document.getElementById("sp").value;
-      
-        var i = usernameArray.indexOf(inputusername);
-      
-        if (eusernameArray.indexOf(inputusername) == -1) {
-          if (inputusername == "") {
-            alert("Username is required.");
-            return;
-          }
-          alert("Username does not exist.");
-          return;
-        } else if (passwordArray[i] != inputpassword) {
-          if (inputpassword == "") {
-            alert("Password required.");
-            return;
-          }
-          alert("Password does not match.");
-          return;
-        } else {
-          (getAllUser !== undefined); {
-          alert(inputusername + " yor are login Now \n welcome to our website.");
-          window.location.href = "homepage.html";
-          }
-        }
-      }
+}
